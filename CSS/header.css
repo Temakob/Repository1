@@ -1,0 +1,72 @@
+.bgimg {
+    max-width: 1000px
+}
+.fresh {
+    font:bold;
+}
+.menu1 {
+    list-style-type: none;
+    text-align: center;
+}
+.home a:hover {
+    background: url(../img/home_hover.jpg) center no-repeat;
+}
+.contact a:hover {
+    background: url(../img/contact_hover.jpg) center no-repeat;
+}
+.menu1 a {
+    padding: 12px 16px 12px 17px;
+}
+.menu1 li {
+    position: relative;
+    top: -498px;
+    left: 170px;
+    font-family: Arial;
+    display:inline-block;
+    margin-left: 5px;
+}
+.FI {
+    text-align: left;
+    font-size: 25px;
+    position: relative;
+    left: 600px;
+    top: -400px;
+}
+.FY {
+    font-weight: lighter;
+}
+.tel {
+    position: relative;
+    top: -600px;
+    left: 800px;
+    padding: 0;
+    font-size: 15px;
+    font-family: Arial;
+}
+.logo {
+    position: relative;
+    top: -230px;
+    left: 30px;
+}
+.lorem {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    min-width: 100px;
+}
+.Ch {
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#eaecec), to(#b5b6b6));
+    height: 30px;
+    width: 80px;
+    border-style:solid;
+    border-radius: 7px;
+}
+.header:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    height: 524px;
+    right: 0;
+    background: url(../img/top_bg.jpg) repeat-x;
+}

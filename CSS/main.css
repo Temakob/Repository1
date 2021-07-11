@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    -webkit-box-sizing: border-box;
+}
+html {
+    width: 1000px;
+    height: 1600px;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: larger;
+    font-family: Arial;
+}
+.menu-item-li:hover {
+    background: url(/img/home_hover.jpg) no-repeat;
+}
+.lets {
+    position: relative;
+    top: -200px;
+    left: 0px;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.create {
+    position: relative;
+    top: -227px;
+    left: 117px;
+}
+.we {
+    position: relative;
+    top: -227px;
+    left: 117px;
+    font-weight: lighter;
+    font-size: 17px;
+}
+.growth {
+    position: relative;
+    top: -140px;
+    right: -80px;
+}
+.welcome {
+    position: relative;
+    top: -390px;
+    left: 125px;
+    padding: 0;
+    font-family: Arial;
+    float: left;
+}
+.line1 {
+    font-size: 20px;
+}
+.wlcm {
+    font-size: 30px;
+}
+.line2 {
+    font-weight: bold;
+}
+.green_dot {
+    font-size: 12px;
+    font-weight: bold;
+}
+.form {
+    padding: 0 35px 35px 35px;
+    width: 255px;
+    border-radius: 10px;
+    position: relative;
+    top: -37px;
+    outline border-radius: 1px solid rgb(224, 223, 223);
+}
+.UL {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: -60px;
+    right: -15px;
+    font-weight: bold;
+    font-size: 150%;
+    width: 250px;
+}
+.login {
+    float: right;
+    width: 12%;
+    position: relative;
+    top: -850px;
+    left: -230px;
+}
+.lb {
+    height: 30px;
+    width: 80px;
+    border-style:solid;
+    border-radius: 13px;
+    font-weight: bold;
+}
+.od {
+    font-size: 75%;
+}
+.£ {
+    border-radius: 13px;
+    border-style:inset;
+    height: 25px;
+}
+.un {
+    top: -50px;
+    right: -30px;
+}
+.work { 
+    font-size: 20px;
+}
+.clock {
+    position: relative;
+    left: -400px;
+}
+.link3 {
+    position: relative;
+    top: -105px;
+    right: -110px;
+    width: 80%;
+}
+.text1 {
+    position: relative;
+    top: -87px;
+    right: -110px;
+    width: 90%;
+}
+.green_dot2 {
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    right: -110px;
+    top: -85px;
+}
+.green_dot23 {
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    right: -210px;
+    top: -150px;
+}
+.dots {
+    position: relative;
+    right: 0px;
+    top: 0px;
+}
+.men {
+    position: relative;
+    left: -400px;
+    top: -65px;
+}
+.dots2 {
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+.dots3 {
+    position: relative;
+    right: 0px;
+}
+.ln {
+    font-size: 25px;
+    position: relative;
+    right: -50px;
+    top: -50px;
+}
+
+.news {
+    width: 255px;
+    border-radius: 10px;
+    outline border-radius: 1px solid rgb(224, 223, 223);
+    padding: 0 35px 0 35px; 
+}
+
+.news_text {
+    position: relative;
+    top: -30px;
+}
+.july {
+    font-weight: bold;
+    position: relative;
+    right: -35px;
+    top: -25px;
+    font-size: 80%;
+}
+.LID {
+    font-size: 70%;
+    position: relative;
+    top: -15px;
+    right: -35px;
+    width: 170px;
+}
+.green_dot3 {
+    position: relative;
+   font-size: 12px;
+   font-weight: bold;
+   right: -35px;
+}
+.event {
+    position: relative;
+    right: 35px;
+}

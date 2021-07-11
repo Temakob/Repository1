@@ -1,0 +1,33 @@
+.menu {
+    position: relative;
+    bottom: -50px;
+    left: 60px;
+    font-size: 80%;    
+}
+.menu a {
+    text-decoration: none;
+}
+.menu2 {
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+.menu2 li {
+    position: relative;
+    font-family: Arial;
+    display:inline-block;
+    margin-left: 20px;
+}
+.footer:before {
+    content: "";
+    display: block;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    height: 122px;
+    right: 0;
+    background: url(../img/footer_bg.jpg) repeat-x;
+}
+.copiright {
+    font-size: 12px;
+}
