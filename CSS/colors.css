@@ -4,7 +4,7 @@
 .menu1 li {
     color: black;
 }
-.home a:hover {
+.menu1 a:hover {
     color: white;
 }
 .contact a:hover {
@@ -20,10 +20,10 @@
     color: white;
 }
 .Ch {
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#eaecec), to(#b5b6b6));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#868686));
 }
 .Ch a:hover {
-    color: white;
+    color: orange;
 }
 .lets {
     color: rgb(100, 99, 99);
@@ -40,6 +40,15 @@
 .line2 {
     color:olivedrab;
 }
+.line3 {
+    color: gray;
+}
+.text1 {
+    color: gray;
+}
+.volutpat {
+    color: gray;
+}
 .green_dot a {
     color: orange;
 }
@@ -48,19 +57,26 @@
 }
 .form {
     background-color: rgb(247, 247, 247);
+    border-color: gray;
 }
 .UL {
     color:olivedrab;
 }
+.un {
+    color: rgb(63, 63, 63);
+}
 .lb {
     color: white;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#e99138), to(#f38d18));
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ff8000), to(#cf6f00));
 }
 .lb a:hover {
     color: olivedrab;
 }
+.£ {
+    color: rgb(170, 169, 169);
+}
 .od a{
-    color: grey;
+    color: rgb(63, 63, 63);
 }
 .od a:hover {
     color: olivedrab;
@@ -93,7 +109,10 @@
     background-color: rgb(247, 247, 247);
 }
 .july {
-    color: green;
+    color: olivedrab;
+}
+.news_text {
+    color: grey;
 }
 .green_dot3 a {
     color: orange;
@@ -104,12 +123,12 @@
 .menu a {
     color: orange;
 }
-.menu a:hover {
+.menu2 a:hover {
     color:olivedrab;
 }
 .menu2 a {
     color:orange;
 }
 .copiright {
-    color: rgb(170, 169, 169);
+    color: rgb(112, 112, 112);
 }

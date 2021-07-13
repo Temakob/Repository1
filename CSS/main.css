@@ -21,59 +21,73 @@ h1 {
 }
 .lets {
     position: relative;
-    top: -200px;
-    left: 0px;
+    top: -194px;
+    left: -90px;
     margin: 0 auto;
     padding: 10px;
     font-family: Arial;
     font-weight: bolder;
-    font-size: 20px;
 }
 .create {
     position: relative;
-    top: -227px;
-    left: 117px;
+    top: -242px;
+    left: 111px;
+    font-size: 24.2px;
+
 }
 .we {
     position: relative;
-    top: -227px;
-    left: 117px;
+    top: -243px;
+    left: 112px;
     font-weight: lighter;
-    font-size: 17px;
+    font-size: 16px;
 }
 .growth {
     position: relative;
     top: -140px;
     right: -80px;
 }
-.welcome {
+article {
     position: relative;
-    top: -390px;
-    left: 125px;
+    height: 360px;
+}
+.welcome {
+    width: 650px;
+    position: relative;
+    top: -395px;
+    left: 30px;
     padding: 0;
     font-family: Arial;
     float: left;
 }
 .line1 {
-    font-size: 20px;
+    font-size: 22px;
 }
 .wlcm {
     font-size: 30px;
 }
 .line2 {
     font-weight: bold;
+    font-size: 13px;
+}
+.line3 {
+    font-size: 12.5px;
+    font-weight: normal;
+    line-height: 16px;
 }
 .green_dot {
     font-size: 12px;
     font-weight: bold;
+    line-height: 20px;
 }
 .form {
-    padding: 0 35px 35px 35px;
+    padding: 0 35px 15px 35px;
     width: 255px;
     border-radius: 10px;
+    border-style: solid;
     position: relative;
     top: -37px;
-    outline border-radius: 1px solid rgb(224, 223, 223);
+    outline border-radius: 1px 
 }
 .UL {
     font-family: Arial, Helvetica, sans-serif;
@@ -84,6 +98,12 @@ h1 {
     font-size: 150%;
     width: 250px;
 }
+.un {
+    padding: 0px 0 5px 10px;
+    font-size: 11px;
+    top: -50px;
+    right: -30px;
+}
 .login {
     float: right;
     width: 12%;
@@ -92,56 +112,61 @@ h1 {
     left: -230px;
 }
 .lb {
-    height: 30px;
-    width: 80px;
+    height: 25px;
+    width: 70px;
     border-style:solid;
     border-radius: 13px;
     font-weight: bold;
 }
 .od {
-    font-size: 75%;
+    font-size: 65%;
+    padding: 10px 0 5px 0px;
 }
 .£ {
     border-radius: 13px;
     border-style:inset;
     height: 25px;
-}
-.un {
-    top: -50px;
-    right: -30px;
+    width: 180px;
 }
 .work { 
-    font-size: 20px;
+    font-size: 24px;
 }
 .clock {
     position: relative;
-    left: -400px;
+    top: -38px;
+    left: -620px;
 }
 .link3 {
     position: relative;
     top: -105px;
-    right: -110px;
-    width: 80%;
+    right: -120px;
+    width: 150%;
+    font-size: 13px;
+    font-weight: bolder;
+    line-height: 11px;
 }
 .text1 {
     position: relative;
     top: -87px;
-    right: -110px;
-    width: 90%;
+    right: -120px;
+    width: 120%;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
 }
 .green_dot2 {
     font-size: 12px;
     font-weight: bold;
     position: relative;
-    right: -110px;
+    right: -120px;
     top: -85px;
 }
 .green_dot23 {
     font-size: 12px;
     font-weight: bold;
     position: relative;
-    right: -210px;
-    top: -150px;
+    right: -150px;
+    top: -155px;
 }
 .dots {
     position: relative;
@@ -150,8 +175,17 @@ h1 {
 }
 .men {
     position: relative;
-    left: -400px;
-    top: -65px;
+    top: -92px;
+    left: -620px;
+}
+.volutpat {
+    position: relative;
+    top: -88px;
+    left: 770px;
+    width: 120%;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
 }
 .dots2 {
     position: relative;
@@ -162,30 +196,42 @@ h1 {
     position: relative;
     right: 0px;
 }
+.container2 {
+    position: relative;
+    left: 65px;
+    top: 97px;
+}
+.event {
+    position: relative;
+    right: 20px;
+}
 .ln {
     font-size: 25px;
     position: relative;
-    right: -50px;
-    top: -50px;
+    right: -40px;
+    top: -45px;
 }
-
 .news {
     width: 255px;
     border-radius: 10px;
+    padding: 0 35px 0 20px; 
+    margin: -25px 0 0 0;
     outline border-radius: 1px solid rgb(224, 223, 223);
-    padding: 0 35px 0 35px; 
 }
 
 .news_text {
     position: relative;
     top: -30px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 16px;
 }
 .july {
-    font-weight: bold;
     position: relative;
     right: -35px;
-    top: -25px;
-    font-size: 80%;
+    top: -20px;
+    font-size: 75%;
+    font-weight: bold;
 }
 .LID {
     font-size: 70%;
@@ -193,14 +239,12 @@ h1 {
     top: -15px;
     right: -35px;
     width: 170px;
+    font-weight: normal;
 }
 .green_dot3 {
     position: relative;
    font-size: 12px;
    font-weight: bold;
    right: -35px;
-}
-.event {
-    position: relative;
-    right: 35px;
+   margin: -5px 0 5px 0;
 }

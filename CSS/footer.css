@@ -1,22 +1,20 @@
-.menu {
-    position: relative;
-    bottom: -50px;
-    left: 60px;
-    font-size: 80%;    
-}
-.menu a {
+.menu2 a {
     text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
 }
 .menu2 {
-    padding: 0;
-    margin: 20px 0;
+    padding: 0px;
+    margin: 0px 0;
     text-align: center;
 }
 .menu2 li {
     position: relative;
+    top: 50px;
+    right: 0px;
     font-family: Arial;
     display:inline-block;
-    margin-left: 20px;
+    margin-right: 10px;
 }
 .footer:before {
     content: "";
@@ -24,10 +22,12 @@
     z-index: -1;
     position: absolute;
     left: 0;
-    height: 122px;
     right: 0;
+    height: 122px;
     background: url(../img/footer_bg.jpg) repeat-x;
 }
 .copiright {
-    font-size: 12px;
+    position: relative;
+    margin-left: 60px;
+    font-size: 12.5px;
 }
