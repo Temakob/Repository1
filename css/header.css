@@ -1,94 +1,54 @@
 .header {
-    display: inline-block;
-    width: 620px;
-    height: 400px;
-    margin: 0 30px 0 30px;
-    position: relative;
-    bottom: 350px;
-    left: 42px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-start;
+
 }
 .mainpic {
-    width: 620px;
+    width: 100%;
 }
 .share {
-    width: 200px;
-    height: 25px;
-    font-size: 20px;
-    position: relative;
-    bottom: 320px;
-    left: 56.5px;
+    margin: 0;
+    padding: 0 0 0 2%;
+    line-height: 50%;
+    font-size: 120%;
+    width: 30%;
     opacity: 0.6;
     background-color: rgb(204, 204, 204);
-    padding: 0px 0 0px 20px;
+    width: 230px;
+    font-size: 23px;
+    position: absolute;
+    top: 30%;
 }
 .submit {
-    width: 400px;
-    height: 20px;
-    font-size: 12px;
-    position: relative;
-    bottom: 320px;
-    left: 56.5px;
+    margin: 0;
+    font-size: 70%;
+    line-height: 30%;
+    padding: 0 0 0 2%;
+    width: 50%;
     color: white;
     background-color: black;
-    padding: 4px 0 0px 20px;
-}
-.submittext {
-    margin: 0;
+    display: flex;
+    position: absolute;
+    top: 37%;
 }
 .headermenu {
-    position: relative;
-    bottom: 40px;
+    line-height: 250%;
+    width: 100%;
     margin: 0;
-    padding: 10px 0 10px 0;
-    display: inline-block;
-    text-align: center;
-    width: 620px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
     background-color: rgb(230, 252, 250);
-}
-.headermenu li {
-    display: inline-block;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 .headermenu a {
     color:turquoise;
     font-weight: bold;
-}
-.icon6 {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    top: -50px;
-}
-.text_login {
-    position: relative;
-    right: -50px;
-    top: -120px;
-}
-.dots {
-    position: relative;
-    top: -50px;
-}
-.dots2 {
-    position: relative;
-    top: -175px;
-}
-.email {
-    position: relative;
-    right: -370px;
-    top: -175px;
-    height: 16px;
-    border-style: ridge;
-    border-radius: 5px;
-}
-.button {
-    position: relative;
-    right: -370px;
-    top: -176px;
-    height: 25px;
-}
-.button a {
-    color: rgb(145, 204, 198);
-    font-weight: bold;
-    font-family: serif;
 }
