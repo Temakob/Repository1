@@ -172,8 +172,10 @@
         padding: 0;
     }
     .mainphoto_text {
-        position: relative;
-        bottom: -150px;
+        margin-top: 7%;
+    }
+    .headermenu li{
+        display: none;
     }
     .share {
         min-width: 98%;
@@ -274,6 +276,9 @@
     .menu {
         display: flex;
         flex-direction:column-reverse;
+    }
+    .mainphoto_text {
+        margin-top: 7%;
     }
     .share {
         margin-top: 30%;

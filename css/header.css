@@ -1,12 +1,8 @@
 .header {
     width: 100%;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
-    align-items: flex-start;
-
+    margin-bottom: -90px;
 }
 .mainpic {
     width: 100%;
