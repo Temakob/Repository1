@@ -174,17 +174,15 @@
     .logo {
         padding: 0;
     }
-    .share {
-        width: 100%;
-        display: flex;
-        align-items: flex-end;
+    .mainphoto_text {
+        position: relative;
+        bottom: -150px;
     }
-    .subscribe {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content:space-around;
-        align-items:flex-end;
+    .share {
+        min-width: 98%;
+    }
+    .submit {
+        min-width: 98%;
     }
     .emailform {
         width: 100%;

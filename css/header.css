@@ -11,30 +11,30 @@
 .mainpic {
     width: 100%;
 }
+.mainphoto_text {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    top: -180px;
+}
 .share {
     margin: 0;
     padding: 0 0 0 2%;
     line-height: 50%;
-    font-size: 120%;
-    width: 30%;
+    font-size: 150%;
+    width: 40%;
     opacity: 0.6;
     background-color: rgb(204, 204, 204);
-    width: 230px;
-    font-size: 23px;
-    position: absolute;
-    top: 30%;
 }
 .submit {
     margin: 0;
     font-size: 70%;
     line-height: 30%;
     padding: 0 0 0 2%;
-    width: 50%;
+    width: 60%;
     color: white;
     background-color: black;
-    display: flex;
-    position: absolute;
-    top: 37%;
 }
 .headermenu {
     line-height: 250%;
