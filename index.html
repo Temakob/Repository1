@@ -1,0 +1,846 @@
+<!doctype html>
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://bootstrap5.ru/examples/pricing" />
+<meta name="description" content="Пример страницы с ценами, созданной с помощью карточек и имеющей настраиваемый верхний и нижний колонтитулы.">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors, Alexey Golyagin">
+<meta name="docsearch:language" content="ru">
+<meta name="docsearch:version" content="5.0">
+<title>Index.html</title>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+<link rel="stylesheet" href="https://bootstrap5.ru/css/docs.css">
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="https://bootstrap5.ru/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="https://bootstrap5.ru/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="https://bootstrap5.ru/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="https://bootstrap5.ru/img/favicons/manifest.json">
+<link rel="mask-icon" href="https://bootstrap5.ru/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="https://bootstrap5.ru/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3">
+<!-- Facebook -->
+<meta property="og:url" content="https://bootstrap5.ru/examples/pricing">
+<meta property="og:title" content="Index.html">
+<meta property="og:description" content="Пример страницы с ценами, созданной с помощью карточек и имеющей настраиваемый верхний и нижний колонтитулы.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://bootstrap5.ru/img/examples/pricing.png">
+<meta property="og:image:type" content="image/jpg">
+<meta property="og:image:width" content="1000">
+<meta property="og:image:height" content="500">
+<style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <!-- верхнее меню -->
+<div class="bd-subnavbar sticky-top d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-0 border-bottom shadow-md">
+  <h3 class="my-0 mr-md-auto font-weight-normal text-primary">OnePage</h3>
+  <nav class="nav" class="my-2 my-md-0 mr-md-3">
+    <a class="p-1 text-primary text-decoration-none" href="#Home">Home</a>
+    <a class="p-1 text-dark text-decoration-none" href="#About">About</a>
+    <a class="p-1 text-dark text-decoration-none" href="#Services">Services</a>
+    <a class="p-1 text-dark text-decoration-none" href="#Portfolio">Portfolio</a>
+    <a class="p-1 text-dark text-decoration-none" href="#Team">Team</a>
+    <a class="p-1 text-dark text-decoration-none" href="#Pricing">Pricing</a>
+    <a class="p-1 nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Drop down</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+    <a class="p-1 text-dark text-decoration-none" href="#Contact">Contact</a>
+  </nav>
+  <button type="button" class="btn btn-primary btn-sm ml-1">Get started</button>
+</div>
+
+<!-- главный заголовок -->
+<div class="bg-dark" id="Home">
+  <section class="py-5 text-center container bg-dark bg-gradient">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="font-weight-bold text-white">OnePage Bootstrap Website Template</h1>
+        <p class="lead text-muted">We are team of talented designers</p>
+        <p>
+          <a href="#" class="btn btn-primary my-2">Get Started</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 ">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+
+        <!-- card 1 -->
+        <div class="col px-3 pb-3">
+            <div class="card shadow-sm">
+                <div class="p-5 pl-3 pb-0 text-left text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cloud-sun" viewBox="0 0 16 16">
+                        <path d="M7 8a3.5 3.5 0 0 1 3.5 3.555.5.5 0 0 0 .624.492A1.503 1.503 0 0 1 13 13.5a1.5 1.5 0 0 1-1.5 1.5H3a2 2 0 1 1 .1-3.998.5.5 0 0 0 .51-.375A3.502 3.502 0 0 1 7 8zm4.473 3a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
+                        <path d="M10.5 1.5a.5.5 0 0 0-1 0v1a.5.5 0 0 0 1 0v-1zm3.743 1.964a.5.5 0 1 0-.707-.707l-.708.707a.5.5 0 0 0 .708.708l.707-.708zm-7.779-.707a.5.5 0 0 0-.707.707l.707.708a.5.5 0 1 0 .708-.708l-.708-.707zm1.734 3.374a2 2 0 1 1 3.296 2.198c.199.281.372.582.516.898a3 3 0 1 0-4.84-3.225c.352.011.696.055 1.028.129zm4.484 4.074c.6.215 1.125.59 1.522 1.072a.5.5 0 0 0 .039-.742l-.707-.707a.5.5 0 0 0-.854.377zM14.5 6.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z"/>
+                      </svg>
+                </div>
+              <div class="card-body text-left pt-3">
+                  <h4 class="text-primary">Lorem ipsum</h4>
+                <div class="d-flex justify-content-left align-items-center">
+                  <small class="text-muted text-left p-3 pl-0">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- card 2 -->
+        <div class="col px-3 pb-3">
+            <div class="card shadow-sm">
+                <div class="p-5 pl-3 pb-0 text-left text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cursor" viewBox="0 0 16 16">
+                        <path d="M14.082 2.182a.5.5 0 0 1 .103.557L8.528 15.467a.5.5 0 0 1-.917-.007L5.57 10.694.803 8.652a.5.5 0 0 1-.006-.916l12.728-5.657a.5.5 0 0 1 .556.103zM2.25 8.184l3.897 1.67a.5.5 0 0 1 .262.263l1.67 3.897L12.743 3.52 2.25 8.184z"/>
+                      </svg>
+                </div>
+              <div class="card-body text-left pt-3">
+                  <h4 class="text-primary">Lorem ipsum</h4>
+                <div class="d-flex justify-content-left align-items-center">
+                  <small class="text-muted text-left p-3 pl-0">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- card 3 -->
+        <div class="col px-3 pb-3">
+            <div class="card shadow-sm">
+                <div class="p-5 pl-3 pb-0 text-left text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-easel" viewBox="0 0 16 16">
+                        <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0zM2 3v7h12V3H2z"/>
+                      </svg>
+                </div>
+              <div class="card-body text-left pt-3">
+                  <h4 class="text-primary">Lorem ipsum</h4>
+                <div class="d-flex justify-content-left align-items-center">
+                  <small class="text-muted text-left p-3 pl-0">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- card 4 -->
+        <div class="col px-3 pb-3">
+            <div class="card shadow-sm">
+                <div class="p-5 pl-3 pb-0 text-left text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-earbuds" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.825 4.138c.596 2.141-.36 3.593-2.389 4.117a4.432 4.432 0 0 1-2.018.054c-.048-.01.9 2.778 1.522 4.61l.41 1.205a.52.52 0 0 1-.346.659l-.593.19a.548.548 0 0 1-.69-.34L.184 6.99c-.696-2.137.662-4.309 2.564-4.8 2.029-.523 3.402 0 4.076 1.948zm-.868 2.221c.43-.112.561-.993.292-1.969-.269-.975-.836-1.675-1.266-1.563-.43.112-.561.994-.292 1.969.269.975.836 1.675 1.266 1.563zm3.218-2.221c-.596 2.141.36 3.593 2.389 4.117a4.434 4.434 0 0 0 2.018.054c.048-.01-.9 2.778-1.522 4.61l-.41 1.205a.52.52 0 0 0 .346.659l.593.19c.289.092.6-.06.69-.34l2.536-7.643c.696-2.137-.662-4.309-2.564-4.8-2.029-.523-3.402 0-4.076 1.948zm.868 2.221c-.43-.112-.561-.993-.292-1.969.269-.975.836-1.675 1.266-1.563.43.112.561.994.292 1.969-.269.975-.836 1.675-1.266 1.563z"/>
+                      </svg>
+                </div>
+              <div class="card-body text-left pt-3">
+                  <h4 class="text-primary">Lorem ipsum</h4>
+                <div class="d-flex justify-content-left align-items-center">
+                  <small class="text-muted text-left p-3 pl-0">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+   </div>
+  </div>
+</div>
+
+ <!-- About us-->
+<div class="p-5" id="About">
+ <section class="py-2 text-center container text-primary">
+    <div class="row py-lg-4">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="font-weight-bold">ABOUT US</h1>
+        <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+      <div class="px-4">
+        <a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</a>
+        <br>
+        <br>
+        <div class="pl-3">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all text-primary" viewBox="0 0 16 16">
+                <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+              </svg> Sed ut perspiciatis unde omnis iste</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all text-primary" viewBox="0 0 16 16">
+                <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+              </svg> Natus error sit voluptatem accusantium</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all text-primary" viewBox="0 0 16 16">
+                <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+              </svg> Doloremque laudantium, totam rem aperiam</p>
+        </div>
+      </div>
+      <div class="px-4">
+        <a>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</a>
+        <br>
+        <br>
+        <p><a href="#" class="btn btn-outline-primary px-4 py-2">Learn more</a></p>
+    </div>
+  </div>
+</div>
+
+ <!-- Statistic -->
+<div class="row row-cols-2 row-cols-md-4 mb-4 text-center py-5 bg-light bg-gradient">
+  <div class="">
+    <h2 class="text-primary font-weight-bold">65</h2>
+    <p>Happy Clients</p>
+  </div>
+  <div class="">
+    <h2 class="text-primary font-weight-bold">85</h2>
+    <p>Projects</p>
+  </div>
+  <div class="">
+    <h2 class="text-primary font-weight-bold">10</h2>
+    <p>Years of experience</p>
+  </div>
+  <div class="">
+    <h2 class="text-primary font-weight-bold">20</h2>
+    <p>Awards</p>
+  </div> 
+</div>
+
+<!-- Video & content -->
+<div class="container">
+<div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 g-2 py-5 mb-4">
+    <div class="p-4">
+      <div class="">
+        <img src="./img/video.png" class="img-fluid" alt="...">
+      </div>
+    </div>
+    <div class="px-5 p-3">
+        <p><h5 class="text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5></p>
+        <a><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</em></a>
+        <br>
+        <br>
+        <div class="px-5">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all text-primary" viewBox="0 0 16 16">
+                <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+              </svg> Sed ut perspiciatis unde omnis iste</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all text-primary" viewBox="0 0 16 16">
+                <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+              </svg> Natus error sit voluptatem accusantium</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all text-primary" viewBox="0 0 16 16">
+                <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+              </svg> Doloremque laudantium, totam rem aperiam</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-all text-primary" viewBox="0 0 16 16">
+                <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0l7-7zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0z"/>
+                <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708z"/>
+            </svg> Sed ut perspiciatis unde omnis iste</p>
+
+        </div>
+      <a>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</a>
+  </div>
+</div>
+</div>
+
+<!-- Partners -->
+<div class="row row-cols-3 row-cols-md-3 row-cols-lg-6 mb-6 text-center px-5 bg-light bg-gradient mb-md-5">
+    <div class="p-5">
+        <img src="./img/logo0.png" class="img-fluid" alt="...">
+    </div>
+    <div class="p-5">
+        <img src="./img/logo1.png" class="img-fluid" alt="...">
+    </div>
+    <div class="p-5">
+        <img src="./img/logo2.png" class="img-fluid" alt="...">
+    </div>
+    <div class="p-5">
+        <img src="./img/logo3.png" class="img-fluid" alt="...">
+    </div> 
+    <div class="p-5">
+        <img src="./img/logo4.png" class="img-fluid" alt="...">
+    </div> 
+    <div class="p-5">
+        <img src="./img/logo5.png" class="img-fluid" alt="...">
+    </div> 
+</div>
+  
+<!-- Testimonials -->
+<div class="container">
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="font-weight-bold text-primary">TESTIMONIALS</h1>
+    <p class="lead text-muted p-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+  </div>
+</div>
+
+<!-- Services -->
+<div class="bg-dark bg-gradient px-5" width="100%" id="Services">
+<section class="pt-5 text-center container">
+    <div class="row pt-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="font-weight-bold text-white">SERVICES</h1>
+        <p class="lead text-muted">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-dark bg-gradient">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col px-3 pb-3">
+          <div class="card shadow-sm py-4">
+              <div class="p-5 pb-0 text-center text-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-command justify-content-center" viewBox="0 0 16 16">
+                  <path d="M3.5 2A1.5 1.5 0 0 1 5 3.5V5H3.5a1.5 1.5 0 1 1 0-3zM6 5V3.5A2.5 2.5 0 1 0 3.5 6H5v4H3.5A2.5 2.5 0 1 0 6 12.5V11h4v1.5a2.5 2.5 0 1 0 2.5-2.5H11V6h1.5A2.5 2.5 0 1 0 10 3.5V5H6zm4 1v4H6V6h4zm1-1V3.5A1.5 1.5 0 1 1 12.5 5H11zm0 6h1.5a1.5 1.5 0 1 1-1.5 1.5V11zm-6 0v1.5A1.5 1.5 0 1 1 3.5 11H5z"/>
+                </svg>
+              </div>
+            <div class="card-body text-center py-5">
+                <h4 class="">Lorem ipsum</h4>
+              <div class="d-flex justify-content-center align-items-center">
+                <small class="text-muted text-center p-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col px-3 pb-3">
+            <div class="card shadow-sm py-4">
+                <div class="p-5 pb-0 text-center text-success">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
+                        <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                        <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+                      </svg>                
+                    </div>
+              <div class="card-body text-center py-5">
+                  <h4 class="">Dolor sit amet</h4>
+                <div class="d-flex justify-content-center align-items-center">
+                  <small class="text-muted text-center p-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col px-3 pb-3">
+            <div class="card shadow-sm py-4">
+                <div class="p-5 pb-0 text-center text-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-controller" viewBox="0 0 16 16">
+                        <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1v-1z"/>
+                        <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729c.14.09.266.19.373.297.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466.206.875.34 1.78.364 2.606.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527-1.627 0-2.496.723-3.224 1.527-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.34 2.34 0 0 1 .433-.335.504.504 0 0 1-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a13.748 13.748 0 0 0-.748 2.295 12.351 12.351 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.354 12.354 0 0 0-.339-2.406 13.753 13.753 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27-1.036 0-2.063.091-2.913.27z"/>
+                      </svg>                
+                    </div>
+              <div class="card-body text-center py-5">
+                  <h4 class="">Consectetur adipiscing</h4>
+                <div class="d-flex justify-content-center align-items-center">
+                  <small class="text-muted text-center p-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col px-3 pb-3">
+              <div class="card shadow-sm py-4">
+                  <div class="p-5 pb-0 text-center text-danger">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-cpu" viewBox="0 0 16 16">
+                        <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+                      </svg>                  
+                    </div>
+                <div class="card-body text-center py-5">
+                    <h4 class="">Elit, sed</h4>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <small class="text-muted text-center p-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col px-3 pb-3">
+              <div class="card shadow-sm py-4">
+                  <div class="p-5 pb-0 text-center text-warning">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-credit-card-2-front" viewBox="0 0 16 16">
+                        <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+                        <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
+                      </svg>                  
+                    </div>
+                <div class="card-body text-center py-5">
+                    <h4 class="">Do eiusmod</h4>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <small class="text-muted text-center p-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col px-3 pb-3">
+              <div class="card shadow-sm py-4">
+                  <div class="p-5 pb-0 text-center text-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
+                        <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+                        <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5zM4 1.934V15h6V1.077l-6 .857z"/>
+                      </svg>                  
+                    </div>
+                <div class="card-body text-center py-5">
+                    <h4 class="">Tempor incididunt</h4>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <small class="text-muted text-center p-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Call to action -->
+<div class="my-5 text-center bg-primary bg-gradient" width="100%">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="font-weight-bold text-white">Call To Action</h1>
+        <p class="lead text-white">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>
+          <a href="#" class="btn btn-dark bg-gradient my-2">Get Started</a>
+        </p>
+      </div>
+    </div>
+  </div>>
+
+<!-- Portfolio -->
+<div class="container"  id="Portfolio">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="font-weight-bold text-primary">PORTFOLIO</h1>
+      <p class="lead text-muted p-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+    </div>
+  </div>
+
+<div class="p-5">
+<div class="row row-cols-3 row-cols-sm-3 row-cols-md-3 text-center">
+  <div class="col-4">
+    <img src="./img/col1-1.png" class="img-fluid py-3" width="100%" alt="...">
+    <img src="./img/col1-2.png" class="img-fluid py-3" width="100%" alt="...">
+  </div>
+<div class="col-4">
+    <img src="./img/col2-1.png" class="img-fluid py-3" width="100%" alt="...">
+    <img src="./img/col2-2.png" class="img-fluid py-3" width="100%" alt="...">
+    <img src="./img/col2-3.png" class="img-fluid py-3" width="100%" alt="...">
+</div>
+<div class="col-4">
+    <img src="./img/col3-1.png" class="img-fluid py-3" width="100%" alt="...">
+    <img src="./img/col3-2.png" class="img-fluid py-3" width="100%" alt="...">
+    <img src="./img/col3-3.png" class="img-fluid py-3" width="100%" alt="...">
+    <img src="./img/col3-4.png" class="img-fluid py-3" width="100%" alt="...">
+</div>
+</div>
+</div>
+
+<!-- Team -->
+<div class="bg-dark bg-gradient px-5" id="Team" width="100%">
+    <section class="pt-5 text-center container">
+        <div class="row pt-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="font-weight-bold text-white">TEAM</h1>
+            <p class="lead text-muted">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+          </div>
+        </div>
+      </section>
+    
+      <div class="album py-5 bg-dark bg-gradient">
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+    
+            <div class="col px-3 pb-3">
+              <div class="card shadow-sm pb-4">
+                  <div class="p-0 text-center text-primary">
+                    <img src="./img/team1.png" class="img-fluid p-0" width="100%" alt="...">
+                </div>
+                <div class="card-body text-center py-2">
+                    <h4 class="text-primary">Lorem ipsum</h4>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <small class="text-muted text-center p-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col px-3 pb-3">
+                <div class="card shadow-sm pb-4">
+                        <div class="p-0 text-center text-primary">
+                            <img src="./img/team2.png" class="img-fluid p-0" width="100%" alt="...">
+                        </div>                      
+                  <div class="card-body text-center py-2">
+                      <h4 class="text-primary">Dolor sit amet</h4>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <small class="text-muted text-center p-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col px-3 pb-3" height="100%">
+                <div class="card shadow-sm pb-4">
+                        <div class="p-0 text-center text-primary">
+                            <img src="./img/team3.png" class="img-fluid p-0" width="100%" alt="...">
+                        </div>                                
+                  <div class="card-body text-center py-2">
+                      <h4 class="text-primary">Consectetur adipiscing</h4>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <small class="text-muted text-center p-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col px-3 pb-3">
+                  <div class="card shadow-sm pb-4" height="100%">
+                        <div class="p-0 text-center text-primary" height="100%">
+                            <img src="./img/team4.png" class="img-fluid p-0" width="100%" alt="...">
+                        </div>
+                    <div class="card-body text-center py-2">
+                        <h4 class="text-primary">Elit, sed</h4>
+                      <div class="d-flex justify-content-center align-items-center">
+                        <small class="text-muted text-center p-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+</div>
+    
+  
+<!-- Pricing -->
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center" id="Pricing">
+  <h1 class="display-4 font-weight-bold text-primary">PRICING</h1>
+  <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, itaque. Voluptatem, autem adipisci? Iste saepe dicta soluta doloremque voluptatum? Omnis, iste quos ratione officiis adipisci corrupti vel fugiat vero reiciendis?</p>
+</div>
+
+<div class="container pb-3">
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">FREE</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title text-primary">$0 <small class="text-muted">/ мес.</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Включено 10 пользователей</li>
+          <li>2 ГБ памяти</li>
+          <li><s>Поддержка по email</s></li>
+          <li><s>Доступ к справочному центру</s></li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Get free</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">PRO</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title text-primary">$15 <small class="text-muted">/ мес.</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Включено 20 пользователей</li>
+          <li>10 ГБ памяти</li>
+          <li>Приоритетная поддержка по email</li>
+          <li><s>Доступ к справочному центру</s></li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Buy now</button>
+      </div>
+    </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 shadow-sm">
+      <div class="card-header">
+        <h4 class="my-0 font-weight-normal">ENTERPRISE</h4>
+      </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title text-primary">$29 <small class="text-muted">/ мес.</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Включено 30 пользователей</li>
+          <li>15 ГБ памяти</li>
+          <li>Поддержка по телефону и email</li>
+          <li>Доступ к справочному центру</li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Buy now</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Questions -->
+<div class="bg-dark bg-gradient pb-5">
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4 font-weight-bold text-primary">FREQUENTLY ASKED QUESTIONS</h1>
+    <p class="lead text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, itaque. Voluptatem, autem adipisci? Iste saepe dicta soluta doloremque voluptatum? Omnis, iste quos ratione officiis adipisci corrupti vel fugiat vero reiciendis?</p>
+  </div>
+<div class="mx-5 bg-dark">
+  <style>
+    .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+        border-radius: 10px;
+    }
+    
+    .active, .accordion:hover {
+        background-color: #ccc; 
+    }
+    
+    .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+    }
+    </style>
+    </head>
+    <body>
+
+    <button class="accordion my-2 align-items-center text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill mx-3" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+      </svg>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</button>
+    <div class="panel my-2 mx-5 bg-dark bg-gr text-light">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <button class="accordion my-2 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill mx-3" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+      </svg>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris?</button>
+    <div class="panel my-2 mx-5 bg-dark bg-gr text-light">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <button class="accordion my-2 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill mx-3" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+      </svg>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore?</button>
+    <div class="panel my-2 mx-5 bg-dark bg-gr text-light">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion my-2 align-items-center text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill mx-3" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+      </svg>Excepteur sint occaecat cupidatat non proident, sunt?</button>
+    <div class="panel my-2 mx-5 bg-dark bg-gr text-light">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion my-2 text-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle-fill mx-3" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0 0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94 0 .533.425.927 1.01.927z"/>
+      </svg>Phasellus egestas tellus rutrum tellus pellentesque?</button>
+    <div class="panel my-2 mx-5 bg-dark bg-gr text-light">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+    </script>
+</div>
+</div>
+
+  <!-- Contact -->
+  <div class="bg-dark bg-gradient" id="Contact">
+  <div class="pricing-header px-3 py-5 py-sm-3 mx-auto text-center">
+    <h1 class="display-4 font-weight-bold text-primary">CONTACT</h1>
+    <p class="lead text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, itaque. Voluptatem, autem adipisci? Iste saepe dicta soluta doloremque voluptatum? Omnis, iste quos ratione officiis adipisci corrupti vel fugiat vero reiciendis?</p>
+  </div>
+  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A6babd1eeda0dc1a91618442b91306ec6c641586a554b474cabf3c717ab60d4b7&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+  <div class="container py-5">
+    <div class="row text-light">
+        <div class="col">
+            <div class="row align-items-start">
+                <div class="col">
+                    <div class="row text-light">
+                      <div class="">
+                          <p class="text-light p-3"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-geo-alt mr-3 text-primary" viewBox="0 0 16 16"> 
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg> Location: A108, Adam Street, New York, NY 535002</p>
+                      </div>
+                        </div>
+                        <p class="text-light p-3"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope text-primary mr-3" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                        </svg>  Email: info@email.com</p>
+                        <p class="text-light p-3"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone-outbound text-primary mr-3" viewBox="0 0 16 16">
+                          <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z"/>
+                        </svg>  Call: +8 (977) 777-77-77</p>
+                </div>
+              </div>
+                    </div>
+        <div class="col">
+
+            <!--Form-->
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Your name" aria-label="Your name">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control" placeholder="Your e-mail" aria-label="Your e-mail">
+                </div>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control my-3" id="exampleFormControlInput1" placeholder="Subject">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+              </div>
+              <div class="d-grid gap-2 col-6 mx-auto text-center">
+                <button class="btn btn-primary" type="button">Send message</button>
+              </div>
+        </div>
+      </div>
+</div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="pt-4 pt-md-0 border-top">
+    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 p-5 bg-light bg-gradient">
+
+      <div class="col-6 text-muted">
+        <a><h4>OnePage</h4>
+            <p>A108 Adam Street New York NY 535022</p> 
+            <p>United States</p> 
+            <p><b>Phone: +7 (977) 777-77-77</b> 
+            <p><b>Email:</b> info@example.com</a></p>
+      </div>
+
+      <div class="col-6">
+        <h5 class="text-primary">Useful links</h5>
+        <ul class="list-unstyled text-small">
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg><a class="link-secondary text-decoration-none" href="#">Home</a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg><a class="link-secondary text-decoration-none" href="#About">About us</a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg><a class="link-secondary text-decoration-none" href="#Services">Services</a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg><a class="link-secondary text-decoration-none" href="#">Terms of service</a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg><a class="link-secondary text-decoration-none" href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h5 class="text-primary">Our Services</h5>
+        <ul class="list-unstyled text-small">
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg><a class="link-secondary text-decoration-none" href="#">Web Design</a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg><a class="link-secondary text-decoration-none" href="#">Web Development</a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg><a class="link-secondary text-decoration-none" href="#">Product Management</a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg><a class="link-secondary text-decoration-none" href="#">Marketing</a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right text-primary" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg><a class="link-secondary text-decoration-none" href="#">Graphic Design</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6">
+        <h5>Join Our Newsletter</h5>
+        <form class="row g-3">
+          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary mr-md-3" type="button" id="button-addon2">Subscribe</button>
+            </div>
+        </form>
+      </div>
+    </div>
+
+    <!--самый нижний footer-->
+<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 bg-dark bg-gradient">
+    <div class="p-5">
+        <p class="mb-1 text-light">Copyright <b>OnePage</b>. All Rights Reserved</p>
+        <p class="mb-0 text-light">Designed by<a class="text-decoration-none" href="/"> BootstrapMade</a></p>
+    </div>
+
+    <div class="row row-cols-6 row-cols-md-6 text-center m-auto px-3 text-primary">
+      <button type="button" class="btn btn-light mx-auto"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-twitter text-primary" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </svg></button>
+      <button type="button" class="btn btn-light mx-auto"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook text-primary" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </svg></button>
+      <button type="button" class="btn btn-light mx-auto"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram text-primary" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </svg></button>
+      <button type="button" class="btn btn-light mx-auto"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-skype text-primary" viewBox="0 0 16 16">
+        <path d="M4.671 0c.88 0 1.733.247 2.468.702a7.423 7.423 0 0 1 6.02 2.118 7.372 7.372 0 0 1 2.167 5.215c0 .344-.024.687-.072 1.026a4.662 4.662 0 0 1 .6 2.281 4.645 4.645 0 0 1-1.37 3.294A4.673 4.673 0 0 1 11.18 16c-.84 0-1.658-.226-2.37-.644a7.423 7.423 0 0 1-6.114-2.107A7.374 7.374 0 0 1 .529 8.035c0-.363.026-.724.08-1.081a4.644 4.644 0 0 1 .76-5.59A4.68 4.68 0 0 1 4.67 0zm.447 7.01c.18.309.43.572.729.769a7.07 7.07 0 0 0 1.257.653c.492.205.873.38 1.145.523.229.112.437.264.615.448.135.142.21.331.21.528a.872.872 0 0 1-.335.723c-.291.196-.64.289-.99.264a2.618 2.618 0 0 1-1.048-.206 11.44 11.44 0 0 1-.532-.253 1.284 1.284 0 0 0-.587-.15.717.717 0 0 0-.501.176.63.63 0 0 0-.195.491.796.796 0 0 0 .148.482 1.2 1.2 0 0 0 .456.354 5.113 5.113 0 0 0 2.212.419 4.554 4.554 0 0 0 1.624-.265 2.296 2.296 0 0 0 1.08-.801c.267-.39.402-.855.386-1.327a2.09 2.09 0 0 0-.279-1.101 2.53 2.53 0 0 0-.772-.792A7.198 7.198 0 0 0 8.486 7.3a1.05 1.05 0 0 0-.145-.058 18.182 18.182 0 0 1-1.013-.447 1.827 1.827 0 0 1-.54-.387.727.727 0 0 1-.2-.508.805.805 0 0 1 .385-.723 1.76 1.76 0 0 1 .968-.247c.26-.003.52.03.772.096.274.079.542.177.802.293.105.049.22.075.336.076a.6.6 0 0 0 .453-.19.69.69 0 0 0 .18-.496.717.717 0 0 0-.17-.476 1.374 1.374 0 0 0-.556-.354 3.69 3.69 0 0 0-.708-.183 5.963 5.963 0 0 0-1.022-.078 4.53 4.53 0 0 0-1.536.258 2.71 2.71 0 0 0-1.174.784 1.91 1.91 0 0 0-.45 1.287c-.01.37.076.736.25 1.063z"/>
+      </svg></button>
+      <button type="button" class="btn btn-light mx-auto"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin text-primary" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+      </svg></button>
+      <button type="button" class="btn btn-light mx-auto" href="#Home"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up-square-fill text-primary" viewBox="0 0 16 16">
+        <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
+      </svg></button>
+    </div>
+</div>
+  </footer>
+
+</div><script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179173139-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());e
+
+  gtag('config', 'UA-179173139-1');
+</script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){ m[i]=m[i]||function(){ (m[i].a=m[i].a||[]).push(arguments) }; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(67718821, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/67718821" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
